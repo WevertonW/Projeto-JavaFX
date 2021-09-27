@@ -1,7 +1,9 @@
 package gui;
 
+import gui.util.Alerts;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Alert.AlertType;
 
 public class ViewController {
 	@FXML
@@ -9,7 +11,7 @@ public class ViewController {
 	
 	@FXML
 	public void onBtTestAction() {
-		System.out.println("Você clicou");
+		Alerts.showAlert("Título da minha Janela", "Header", "Conteúdo", AlertType.INFORMATION);
 	}
 	
 }
